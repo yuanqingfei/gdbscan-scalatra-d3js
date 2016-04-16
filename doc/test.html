@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <!-- CSS (load bootstrap) -->
+
+
+    <script type="text/javascript">
+var test = { 
+	
+	"chart": {
+        "type": "scatterChart", 
+        "height": 900, 
+        "width": 900, 
+        "margin": {
+            "top": 20, 
+            "right": 20, 
+            "bottom": 60, 
+            "left": 55
+        }, 
+        "showValues": true, 
+        "transitionDuration": 350, 
+        "xAxis": {
+            "axisLabel": "X Axis"
+        }, 
+        "yAxis": {
+            "axisLabel": "Y Axis"
+        },
+        
+        "title": {
+            "enable": true,
+            "text": "GDBSCAN DIGRAM"
+        },
+		zoom: {
+			//NOTE: All attributes below are optional
+			enabled: true,
+			scale: 1,
+			scaleExtent: [1, 10],
+			translate: [0, 0],
+			useFixedDomain: false,
+			useNiceScale: false,
+			horizontalOff: false,
+			verticalOff: false,
+			zoomed: function(xDomain, yDomain) {
+				var domains = {x1: 0, x2: 0, y1: 1, y2: 1};
+				return domains;
+			},
+			unzoomed: function(xDomain, yDomain) {
+				var domains = {x1: 0, x2: 0, y1: 0, y2: 0};
+				return domains;
+			},
+			unzoomEventType: 'dblclick.zoom'
+		}             
+    },
+    
+    
+	// title options
+    title: {
+        enable: true,
+        text: 'Title for Line Chart'
+    },
+
+    // subtitle options
+    subtitle: {
+        enable: true,
+        text: 'Subtitle for simple line chart. Lorem ipsum dolor sit amet...',
+        css: {
+            'text-align': 'center',
+            'margin': '10px 13px 0px 7px'
+        }
+    },
+
+    // caption options
+    caption: {
+        enable: true,
+        html: 'Figure 1. Lorem ipsum dolor sit amet...',
+        css: {
+            'text-align': 'justify',
+            'margin': '10px 13px 0px 7px'
+        }
+    }    
+};
+
+var result = JSON.stringify(test, null, 4);
+
+console.log(result);
+
+
+    </script>
+
+</head>
+
+<!-- apply our angular app to our site -->
+<body>
+
+
+</body>
+</html>

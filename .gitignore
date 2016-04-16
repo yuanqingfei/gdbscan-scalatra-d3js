@@ -1,0 +1,36 @@
+# sbt target folders
+target/
+bin/
+project/target
+project/project
+
+# eclipse project files
+/.settings
+/.classpath
+/.project
+
+# idea project files
+
+/.idea
+
+# js
+js/bin
+js/target
+js/.gitignore
+js/.settings
+js/.classpath
+js/.project
+js/.cache-main
+js/.cache-tests
+
+# jvm
+jvm/bin
+jvm/target
+jvm/.gitignore
+jvm/.settings
+jvm/.classpath
+jvm/.project
+jvm/.cache-main
+jvm/.cache-tests
+
+bower_components

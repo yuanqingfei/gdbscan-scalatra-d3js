@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <!-- CSS (load bootstrap) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nv.d3.css">
+
+    <script type="text/javascript" src="js/dependency.js"></script>
+    <script type="text/javascript" src="js/fastOpt.js"></script>
+    <script type="text/javascript" src="js/launcher.js"></script>
+</head>
+
+<!-- apply our angular app to our site -->
+<body ng-app="d3App">
+<div ng-controller="d3Ctrl">
+    <nvd3 id="nvd3Part" options="ref" data="content" api="myapi" config="config" on-ready="callback"></nvd3>
+    <form name="myForm" ng-submit="controller.submit()">
+        <input name="eps" required ng-model="myFormEps"/>
+        <input name="minP" required ng-model="myFormMinP"/>
+        <input type="submit" ng-disabled="myForm.$invalid"/>
+    </form>
+</div>
+
+</body>
+</html>
