@@ -105,9 +105,8 @@ lazy val app = crossProject.in(file("."))
       IO.touch(target.value / "compilationFinished")
 
       compilationResult
-    },
+    }
 
-    mainClass in Compile := Some("com.afei.akkaangular.Main")
   )
 
 lazy val appJS = app.js.enablePlugins(ScalaJSPlugin)
