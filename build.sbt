@@ -113,4 +113,3 @@ lazy val appJS = app.js.enablePlugins(ScalaJSPlugin)
 
 lazy val appJVM = app.jvm.enablePlugins(JettyPlugin)
 
-
